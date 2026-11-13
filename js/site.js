@@ -15,6 +15,10 @@
     if (ant) ant.addEventListener("click", function () { trilho.scrollBy({ left: -passo(), behavior: "smooth" }); });
     if (prox) prox.addEventListener("click", function () { trilho.scrollBy({ left: passo(), behavior: "smooth" }); });
     trilho.addEventListener("scroll", atualizar, { passive: true });
+    // A roda do mouse não mexe no carrossel: só as setas (e o toque, no celular).
+    trilho.addEventListener("wheel", function (ev) {
+      if (ev.shiftKey || Math.abs(ev.deltaX) > Math.abs(ev.deltaY)) ev.preventDefault();
+    }, { passive: false });
     window.addEventListener("resize", atualizar);
     atualizar();
   });
@@ -39,6 +43,51 @@
       principal.src = b.getAttribute("data-foto");
       document.querySelectorAll("[data-foto]").forEach(function (x) { x.setAttribute("aria-pressed", "false"); });
       b.setAttribute("aria-pressed", "true");
+    });
+  });
+
+  // Faixa fixa: aparece quando o gatilho (botões de categoria ou o topo) passa do alto da tela.
+  var faixa = document.querySelector("[data-faixa]");
+  var gatilho = document.querySelector("[data-faixa-gatilho]") || document.querySelector(".topo");
+  if (faixa && gatilho && "IntersectionObserver" in window) {
+    new IntersectionObserver(function (itens) {
+      var x = itens[0];
+      var passou = !x.isIntersecting && x.boundingClientRect.top < 0;
+      faixa.classList.toggle("ativa", passou);
+      if (passou) faixa.removeAttribute("inert"); else faixa.setAttribute("inert", "");
+    }).observe(gatilho);
+  }
+
+  // Botões de categoria: marcam a seção que está na tela.
+  var atalhos = document.querySelectorAll("[data-atalho]");
+  if (atalhos.length && "IntersectionObserver" in window) {
+    var spy = new IntersectionObserver(function (itens) {
+      itens.forEach(function (i) {
+        if (!i.isIntersecting) return;
+        atalhos.forEach(function (a) {
+          if (a.getAttribute("data-atalho") === i.target.id) a.setAttribute("aria-current", "true");
+          else a.removeAttribute("aria-current");
+        });
+      });
+    }, { rootMargin: "-35% 0px -60% 0px" });
+    var vistos = {};
+    atalhos.forEach(function (a) {
+      var id = a.getAttribute("data-atalho");
+      var alvo = document.getElementById(id);
+      if (alvo && !vistos[id]) { vistos[id] = true; spy.observe(alvo); }
+    });
+  }
+
+  // Vídeo do modelo: troca a capa pelo player do YouTube só quando a pessoa clica.
+  document.querySelectorAll("[data-video]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var f = document.createElement("iframe");
+      f.src = "https://www.youtube-nocookie.com/embed/" + b.getAttribute("data-video") + "?autoplay=1&rel=0";
+      f.title = b.getAttribute("aria-label");
+      f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+      f.allowFullscreen = true;
+      f.referrerPolicy = "strict-origin-when-cross-origin";
+      b.replaceWith(f);
     });
   });
 
