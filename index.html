@@ -4,148 +4,376 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nautica Motors | Revendedor autorizado Mercury e Solara em Belém</title>
-<meta name="description" content="Motores Mercury, lanchas Solara, oficina e peças náuticas em Belém (PA). Revendedor autorizado Mercury e Solara.">
-<meta name="theme-color" content="#2994C9">
+<meta name="description" content="Lanchas Solara, motores Mercury, oficina e peças náuticas em Belém (PA). Revendedor autorizado Mercury e Solara Yachts.">
+<meta name="theme-color" content="#171717">
 <link rel="icon" type="image/png" href="img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Oswald:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="css/estilo.css">
 <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<header class="topo topo--sobre">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo topo--hero" data-topo>
   <div class="topo__in">
+    <button class="topo__burger" type="button" aria-expanded="false" aria-controls="menu-movel" data-burger><span></span><span></span><span></span><span class="sr">Menu</span></button>
     <a class="marca" href="index.html"><img src="img/logo-nautica.png" alt="Nautica Motors" width="457" height="257"></a>
-    <nav class="menu" aria-label="Principal">
-      <a href="index.html" aria-current="page">Home</a>
-      <a href="mercury.html">Mercury</a>
-      <a href="solara.html">Solara</a>
-      <a href="index.html#contato">Contato</a>
+    <nav class="nav" aria-label="Principal">
+      <ul class="nav__lista">
+        <li class="nav__item nav__item--mega">
+          <a class="nav__link" href="solara.html">Lanchas Solara</a>
+          <button class="nav__abre" type="button" aria-expanded="false" aria-controls="mega-solara"><span class="sr">Abrir modelos Solara</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="mega" id="mega-solara">
+            <div class="mega__in carrossel" data-carrossel>
+              <div class="mega__trilho carrossel__trilho"><a class="mcard" href="solara/solara-500.html"><span class="mcard__foto"><img src="img/solara/solara-500/card.webp" alt="" width="480" height="320" loading="lazy"></span><span class="mcard__nome">Solara 500</span><ul class="mcard__specs"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7v10M21 7v10M6 12h12M6 12l3-3M6 12l3 3M18 12l-3-3M18 12l-3 3"/></svg><span>15,10 m</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 14l4-4"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/></svg><span>2 motores Volvo Penta D6</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 22h12M4 9h10M14 22V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v18"/><path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 4 0V9.8a2 2 0 0 0-.6-1.4L18 5"/></svg><span>1.000 L</span></li></ul></a><a class="mcard" href="solara/solara-455-bowrider.html"><span class="mcard__foto"><img src="img/solara/solara-455-bowrider/card.webp" alt="" width="480" height="320" loading="lazy"></span><span class="mcard__nome">Solara 455 Bowrider</span><ul class="mcard__specs"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7v10M21 7v10M6 12h12M6 12l3-3M6 12l3 3M18 12l-3-3M18 12l-3 3"/></svg><span>14,00 m</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 14l4-4"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/></svg><span>2 motores a gasolina ou diesel</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 22h12M4 9h10M14 22V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v18"/><path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 4 0V9.8a2 2 0 0 0-.6-1.4L18 5"/></svg><span>1.000 L</span></li></ul></a><a class="mcard" href="solara/solara-410.html"><span class="mcard__foto"><img src="img/solara/solara-410/card.webp" alt="" width="480" height="320" loading="lazy"></span><span class="mcard__nome">Solara 410</span><ul class="mcard__specs"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7v10M21 7v10M6 12h12M6 12l3-3M6 12l3 3M18 12l-3-3M18 12l-3 3"/></svg><span>12,50 m</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 14l4-4"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/></svg><span>2 motores de 300 a 350 hp</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 22h12M4 9h10M14 22V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v18"/><path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 4 0V9.8a2 2 0 0 0-.6-1.4L18 5"/></svg><span>760 L</span></li></ul></a><a class="mcard" href="solara/solara-380.html"><span class="mcard__foto"><img src="img/solara/solara-380/card.webp" alt="" width="480" height="320" loading="lazy"></span><span class="mcard__nome">Solara 380</span><ul class="mcard__specs"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7v10M21 7v10M6 12h12M6 12l3-3M6 12l3 3M18 12l-3-3M18 12l-3 3"/></svg><span>12,10 m</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 14l4-4"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/></svg><span>2 motores de 250 a 300 hp</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 22h12M4 9h10M14 22V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v18"/><path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 4 0V9.8a2 2 0 0 0-.6-1.4L18 5"/></svg><span>450 L</span></li></ul></a><a class="mcard" href="solara/solara-380-bowrider.html"><span class="mcard__foto"><img src="img/solara/solara-380-bowrider/card.webp" alt="" width="480" height="320" loading="lazy"></span><span class="mcard__nome">Solara 380 Bowrider</span><ul class="mcard__specs"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7v10M21 7v10M6 12h12M6 12l3-3M6 12l3 3M18 12l-3-3M18 12l-3 3"/></svg><span>12,10 m</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 14l4-4"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/></svg><span>2 motores de 250 a 300 hp</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 22h12M4 9h10M14 22V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v18"/><path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 4 0V9.8a2 2 0 0 0-.6-1.4L18 5"/></svg><span>450 L</span></li></ul></a><a class="mcard" href="solara/solara-350.html"><span class="mcard__foto"><img src="img/solara/solara-350/card.webp" alt="" width="480" height="320" loading="lazy"></span><span class="mcard__nome">Solara 350</span><ul class="mcard__specs"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7v10M21 7v10M6 12h12M6 12l3-3M6 12l3 3M18 12l-3-3M18 12l-3 3"/></svg><span>10,85 m</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 14l4-4"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/></svg><span>1 motor de 350 a 450 hp ou 2 de 200 a 250 hp</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 22h12M4 9h10M14 22V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v18"/><path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 4 0V9.8a2 2 0 0 0-.6-1.4L18 5"/></svg><span>450 L</span></li></ul></a><a class="mcard" href="solara/solara-235.html"><span class="mcard__foto"><img src="img/solara/solara-235/card.webp" alt="" width="480" height="320" loading="lazy"></span><span class="mcard__nome">Solara 235</span><ul class="mcard__specs"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7v10M21 7v10M6 12h12M6 12l3-3M6 12l3 3M18 12l-3-3M18 12l-3 3"/></svg><span>7,35 m</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 14l4-4"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/></svg><span>1 motor de 200 a 250 hp</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 22h12M4 9h10M14 22V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v18"/><path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 4 0V9.8a2 2 0 0 0-.6-1.4L18 5"/></svg><span>175 L</span></li></ul></a><a class="mcard" href="solara/pontoon-320.html"><span class="mcard__foto"><img src="img/solara/pontoon-320/card.webp" alt="" width="480" height="320" loading="lazy"></span><span class="mcard__nome">Pontoon 320</span><ul class="mcard__specs"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7v10M21 7v10M6 12h12M6 12l3-3M6 12l3 3M18 12l-3-3M18 12l-3 3"/></svg><span>9,39 m</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 14l4-4"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/></svg><span>motor de popa de 150 a 300 hp</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 22h12M4 9h10M14 22V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v18"/><path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 4 0V9.8a2 2 0 0 0-.6-1.4L18 5"/></svg><span>280 L</span></li></ul></a><a class="mcard" href="solara/boat-house.html"><span class="mcard__foto"><img src="img/solara/boat-house/card.webp" alt="" width="480" height="320" loading="lazy"></span><span class="mcard__nome">Boat House</span><ul class="mcard__specs"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7v10M21 7v10M6 12h12M6 12l3-3M6 12l3 3M18 12l-3-3M18 12l-3 3"/></svg><span>11,40 m</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 14l4-4"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/></svg><span>38 m² de área interna</span></li></ul></a></div>
+              <button class="mega__seta mega__seta--ant" type="button" data-ant aria-label="Anteriores"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="seta-ico"><path d="M15 5l-7 7 7 7"/></svg></button>
+              <button class="mega__seta mega__seta--prox" type="button" data-prox aria-label="Próximos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="seta-ico"><path d="M9 5l7 7-7 7"/></svg></button>
+            </div>
+          </div>
+        </li>
+        <li class="nav__item nav__item--mega">
+          <a class="nav__link" href="mercury.html">Motores Mercury</a>
+          <button class="nav__abre" type="button" aria-expanded="false" aria-controls="mega-mercury"><span class="sr">Abrir linhas Mercury</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="mega" id="mega-mercury">
+            <div class="mega__in carrossel" data-carrossel>
+              <div class="mega__trilho carrossel__trilho"><a class="mcard mcard--motor" href="mercury.html#linha-verado"><span class="mcard__foto"><img src="img/motores/verado-600hp.webp" alt="" loading="lazy"></span><span class="mcard__nome">Verado</span><ul class="mcard__specs"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 14l4-4"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/></svg><span>250 a 600 hp</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg><span>3 modelos</span></li></ul></a><a class="mcard mcard--motor" href="mercury.html#linha-pro-xs"><span class="mcard__foto"><img src="img/motores/proxs-175-300hp.webp" alt="" loading="lazy"></span><span class="mcard__nome">Pro XS</span><ul class="mcard__specs"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 14l4-4"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/></svg><span>115 a 300 hp</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg><span>2 modelos</span></li></ul></a><a class="mcard mcard--motor" href="mercury.html#linha-fourstroke"><span class="mcard__foto"><img src="img/motores/fourstroke-75-150hp.webp" alt="" loading="lazy"></span><span class="mcard__nome">FourStroke</span><ul class="mcard__specs"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 14l4-4"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/></svg><span>2,5 a 300 hp</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg><span>9 modelos</span></li></ul></a><a class="mcard mcard--motor" href="mercury.html#linha-seapro"><span class="mcard__foto"><img src="img/motores/seapro-200-350hp.webp" alt="" loading="lazy"></span><span class="mcard__nome">SeaPro</span><ul class="mcard__specs"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 14l4-4"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/></svg><span>15 a 500 hp</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg><span>5 modelos</span></li></ul></a><a class="mcard mcard--motor" href="mercury.html#linha-dois-tempos"><span class="mcard__foto"><img src="img/motores/dois-tempos-3-3-50hp.webp" alt="" loading="lazy"></span><span class="mcard__nome">Dois Tempos</span><ul class="mcard__specs"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 14l4-4"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/></svg><span>3,3 a 50 hp</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg><span>1 modelo</span></li></ul></a><a class="mcard mcard--motor" href="mercury.html#linha-mercruiser"><span class="mcard__foto"><img src="img/motores/mercruiser-6-2l.webp" alt="" loading="lazy"></span><span class="mcard__nome">MerCruiser</span><ul class="mcard__specs"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 14l4-4"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/></svg><span>200 a 430 hp</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg><span>3 modelos</span></li></ul></a><a class="mcard mcard--motor" href="mercury.html#linha-tow-sport"><span class="mcard__foto"><img src="img/motores/towsport-t6200.webp" alt="" loading="lazy"></span><span class="mcard__nome">Tow Sport</span><ul class="mcard__specs"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 14l4-4"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/></svg><span>320 a 430 hp</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg><span>2 modelos</span></li></ul></a><a class="mcard mcard--motor" href="mercury.html#linha-diesel"><span class="mcard__foto"><img src="img/motores/diesel-3-0l.webp" alt="" loading="lazy"></span><span class="mcard__nome">Diesel</span><ul class="mcard__specs"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 14l4-4"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/></svg><span>115 a 550 hp</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg><span>4 modelos</span></li></ul></a><a class="mcard mcard--motor" href="mercury.html#linha-rabetas"><span class="mcard__foto"><img src="img/motores/rabeta-bravo-three.webp" alt="" loading="lazy"></span><span class="mcard__nome">Rabetas</span><ul class="mcard__specs"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 14l4-4"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/></svg><span>Alpha e Bravo</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg><span>5 modelos</span></li></ul></a><a class="mcard mcard--motor" href="mercury.html#linha-avator"><span class="mcard__foto"><img src="img/motores/avator-75e-110e.webp" alt="" loading="lazy"></span><span class="mcard__nome">Avator</span><ul class="mcard__specs"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 14l4-4"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/></svg><span>750 W a 11 kW</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg><span>3 modelos</span></li></ul></a></div>
+              <button class="mega__seta mega__seta--ant" type="button" data-ant aria-label="Anteriores"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="seta-ico"><path d="M15 5l-7 7 7 7"/></svg></button>
+              <button class="mega__seta mega__seta--prox" type="button" data-prox aria-label="Próximos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="seta-ico"><path d="M9 5l7 7-7 7"/></svg></button>
+            </div>
+          </div>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="index.html#oficina">Oficina</a></li>
+        <li class="nav__item"><a class="nav__link" href="index.html#sobre">Sobre</a></li>
+        <li class="nav__item"><a class="nav__link" href="index.html#contato">Contato</a></li>
+      </ul>
     </nav>
-  </div>
-</header>
-<div class="faixa" data-faixa inert>
-  <div class="faixa__in">
-    <a class="marca" href="index.html"><img src="img/logo-nautica.png" alt="Nautica Motors" width="457" height="257"></a>
-    <nav class="menu" aria-label="Principal, fixa">
-      <a href="index.html" aria-current="page">Home</a>
-      <a href="mercury.html">Mercury</a>
-      <a href="solara.html">Solara</a>
-      <a href="index.html#contato">Contato</a>
-    </nav>
+    <a class="botao topo__cta" href="https://wa.me/559132243322?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Nautica%20Motors%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Solicitar orçamento</a>
   </div>
   
+</header>
+<div class="menu-movel" id="menu-movel" data-menu-movel hidden>
+  <nav aria-label="Principal, celular">
+    <details class="menu-movel__grupo"><summary>Lanchas Solara<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><ul><li><a href="solara.html">Todos os modelos</a></li><li><a href="solara/solara-500.html">Solara 500</a></li><li><a href="solara/solara-455-bowrider.html">Solara 455 Bowrider</a></li><li><a href="solara/solara-410.html">Solara 410</a></li><li><a href="solara/solara-380.html">Solara 380</a></li><li><a href="solara/solara-380-bowrider.html">Solara 380 Bowrider</a></li><li><a href="solara/solara-350.html">Solara 350</a></li><li><a href="solara/solara-235.html">Solara 235</a></li><li><a href="solara/pontoon-320.html">Pontoon 320</a></li><li><a href="solara/boat-house.html">Boat House</a></li></ul></details>
+    <details class="menu-movel__grupo"><summary>Motores Mercury<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><ul><li><a href="mercury.html">Todos os motores</a></li><li><a href="mercury.html#linha-verado">Verado</a></li><li><a href="mercury.html#linha-pro-xs">Pro XS</a></li><li><a href="mercury.html#linha-fourstroke">FourStroke</a></li><li><a href="mercury.html#linha-seapro">SeaPro</a></li><li><a href="mercury.html#linha-dois-tempos">Dois Tempos</a></li><li><a href="mercury.html#linha-mercruiser">MerCruiser</a></li><li><a href="mercury.html#linha-tow-sport">Tow Sport</a></li><li><a href="mercury.html#linha-diesel">Diesel</a></li><li><a href="mercury.html#linha-rabetas">Rabetas</a></li><li><a href="mercury.html#linha-avator">Avator</a></li></ul></details>
+    <a class="menu-movel__link" href="index.html#oficina">Oficina</a>
+    <a class="menu-movel__link" href="index.html#sobre">Sobre</a>
+    <a class="menu-movel__link" href="index.html#contato">Contato</a>
+    <a class="botao menu-movel__cta" href="https://wa.me/559132243322?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Nautica%20Motors%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Solicitar orçamento</a>
+  </nav>
 </div>
 
-<main>
-  <section class="hero" aria-labelledby="titulo-home">
+<main id="conteudo">
+  <section class="hero" aria-labelledby="titulo-home" data-hero>
+    <h1 id="titulo-home" class="sr">Nautica Motors: lanchas Solara e motores Mercury em Belém</h1>
+    <figure class="hero__slide ativo" data-slide>
+        <picture>
+          <source media="(max-width: 700px)" srcset="img/hero/solara-500-ht-m.webp">
+          <img class="hero__img" src="img/hero/solara-500-ht.webp" alt="Solara 500 HT, Fly e Skydeck na água" width="1920" height="1080" fetchpriority="high" style="--foco:32% 50%">
+        </picture>
+        <figcaption class="hero__legenda"><a href="solara/solara-500.html"><span>Solara 500</span><small>Ver modelo <span aria-hidden="true">→</span></small></a></figcaption>
+      </figure><figure class="hero__slide" data-slide>
+        <picture>
+          <source media="(max-width: 700px)" srcset="img/solara/solara-410/hero-m.webp">
+          <img class="hero__img" src="img/solara/solara-410/hero.webp" alt="Solara 410 HT e Fly na água" width="1920" height="1080" loading="lazy" style="--foco:50% 50%">
+        </picture>
+        <figcaption class="hero__legenda"><a href="solara/solara-410.html"><span>Solara 410</span><small>Ver modelo <span aria-hidden="true">→</span></small></a></figcaption>
+      </figure><figure class="hero__slide" data-slide>
+        <picture>
+          <source media="(max-width: 700px)" srcset="img/solara/solara-380-bowrider/hero-m.webp">
+          <img class="hero__img" src="img/solara/solara-380-bowrider/hero.webp" alt="Solara 380 Bowrider na água" width="1920" height="1080" loading="lazy" style="--foco:45% 50%">
+        </picture>
+        <figcaption class="hero__legenda"><a href="solara/solara-380-bowrider.html"><span>Solara 380 Bowrider</span><small>Ver modelo <span aria-hidden="true">→</span></small></a></figcaption>
+      </figure><figure class="hero__slide" data-slide>
+        <picture>
+          <source media="(max-width: 700px)" srcset="img/solara/pontoon-320/hero-m.webp">
+          <img class="hero__img" src="img/solara/pontoon-320/hero.webp" alt="Pontoon 320 T, T-Top e Double Deck na água" width="1920" height="1080" loading="lazy" style="--foco:40% 50%">
+        </picture>
+        <figcaption class="hero__legenda"><a href="solara/pontoon-320.html"><span>Pontoon 320</span><small>Ver modelo <span aria-hidden="true">→</span></small></a></figcaption>
+      </figure><figure class="hero__slide" data-slide>
+        <picture>
+          <source media="(max-width: 700px)" srcset="img/solara/solara-350/hero-m.webp">
+          <img class="hero__img" src="img/solara/solara-350/hero.webp" alt="Solara 350 Targa e GT na água" width="1920" height="1080" loading="lazy" style="--foco:45% 50%">
+        </picture>
+        <figcaption class="hero__legenda"><a href="solara/solara-350.html"><span>Solara 350</span><small>Ver modelo <span aria-hidden="true">→</span></small></a></figcaption>
+      </figure><figure class="hero__slide" data-slide>
+        <picture>
+          <source media="(max-width: 700px)" srcset="img/solara/solara-235/hero-m.webp">
+          <img class="hero__img" src="img/solara/solara-235/hero.webp" alt="Solara 235 Open e GT na água" width="1920" height="1080" loading="lazy" style="--foco:55% 50%">
+        </picture>
+        <figcaption class="hero__legenda"><a href="solara/solara-235.html"><span>Solara 235</span><small>Ver modelo <span aria-hidden="true">→</span></small></a></figcaption>
+      </figure><figure class="hero__slide" data-slide>
+        <picture>
+          <source media="(max-width: 700px)" srcset="img/solara/boat-house/hero-m.webp">
+          <img class="hero__img" src="img/solara/boat-house/hero.webp" alt="Boat House na água" width="1920" height="1080" loading="lazy" style="--foco:45% 50%">
+        </picture>
+        <figcaption class="hero__legenda"><a href="solara/boat-house.html"><span>Boat House</span><small>Ver modelo <span aria-hidden="true">→</span></small></a></figcaption>
+      </figure>
+    <div class="hero__pontos" aria-label="Fotos em destaque"><button class="hero__ponto" type="button" data-ponto aria-label="Foto 1: Solara 500" aria-current="true"></button><button class="hero__ponto" type="button" data-ponto aria-label="Foto 2: Solara 410"></button><button class="hero__ponto" type="button" data-ponto aria-label="Foto 3: Solara 380 Bowrider"></button><button class="hero__ponto" type="button" data-ponto aria-label="Foto 4: Pontoon 320"></button><button class="hero__ponto" type="button" data-ponto aria-label="Foto 5: Solara 350"></button><button class="hero__ponto" type="button" data-ponto aria-label="Foto 6: Solara 235"></button><button class="hero__ponto" type="button" data-ponto aria-label="Foto 7: Boat House"></button></div>
+  </section>
+
+  <section class="secao secao--preto escolha" aria-label="Escolha um modelo" data-escolha>
+    <div class="miolo">
+      <div class="escolha__abas" role="tablist" aria-label="Linha">
+        <button class="escolha__aba" type="button" role="tab" id="aba-solara" aria-selected="true" aria-controls="painel-solara">Solara</button>
+        <span aria-hidden="true">/</span>
+        <button class="escolha__aba" type="button" role="tab" id="aba-mercury" aria-selected="false" aria-controls="painel-mercury" tabindex="-1">Mercury</button>
+      </div>
+      <div class="escolha__painel ativo" id="painel-solara" role="tabpanel" aria-labelledby="aba-solara"><article class="escolha__item ativo" data-item>
+          <div class="escolha__texto">
+            <h3 class="escolha__nome">Solara 500</h3>
+            <p class="escolha__versoes">HT, Fly e Skydeck</p>
+            <p class="escolha__desc">Lancha de 15,10 m, a maior da linha, nas versões Hardtop, Flybridge e Skydeck.</p>
+            <p class="escolha__spec">15,10 m · 15+1 · 1.000 L</p>
+            <a class="botao" href="solara/solara-500.html">Ver modelo</a>
+          </div>
+          <div class="escolha__foto"><img src="img/solara/solara-500/hero-m.webp" alt="Solara 500 HT, Fly e Skydeck" width="1000" height="563" loading="lazy"></div>
+        </article><article class="escolha__item" data-item>
+          <div class="escolha__texto">
+            <h3 class="escolha__nome">Solara 455 Bowrider</h3>
+            <p class="escolha__versoes">2 motores a gasolina ou diesel</p>
+            <p class="escolha__desc">Lancha bowrider de 14,00 m e 4,05 m de boca, com dois camarotes, dois toaletes e capacidade para 19 passageiros mais o piloto durante o dia.</p>
+            <p class="escolha__spec">14,00 m · 19+1 · 1.000 L</p>
+            <a class="botao" href="solara/solara-455-bowrider.html">Ver modelo</a>
+          </div>
+          <div class="escolha__foto"><img src="img/solara/solara-455-bowrider/hero-m.webp" alt="Solara 455 Bowrider" width="1000" height="563" loading="lazy"></div>
+        </article><article class="escolha__item" data-item>
+          <div class="escolha__texto">
+            <h3 class="escolha__nome">Solara 410</h3>
+            <p class="escolha__versoes">HT e Fly</p>
+            <p class="escolha__desc">Lancha de 12,50 m nas versões Hard Top e Flybridge, com casco de V de 21° na popa.</p>
+            <p class="escolha__spec">12,50 m · 3,50 m · 13+1</p>
+            <a class="botao" href="solara/solara-410.html">Ver modelo</a>
+          </div>
+          <div class="escolha__foto"><img src="img/solara/solara-410/hero-m.webp" alt="Solara 410 HT e Fly" width="1000" height="563" loading="lazy"></div>
+        </article><article class="escolha__item" data-item>
+          <div class="escolha__texto">
+            <h3 class="escolha__nome">Solara 380</h3>
+            <p class="escolha__versoes">HT e GT</p>
+            <p class="escolha__desc">Lancha de 12,10 m em duas versões.</p>
+            <p class="escolha__spec">12,10 m · 3,25 m · 1+12</p>
+            <a class="botao" href="solara/solara-380.html">Ver modelo</a>
+          </div>
+          <div class="escolha__foto"><img src="img/solara/solara-380/hero-m.webp" alt="Solara 380 HT e GT" width="1000" height="563" loading="lazy"></div>
+        </article><article class="escolha__item" data-item>
+          <div class="escolha__texto">
+            <h3 class="escolha__nome">Solara 380 Bowrider</h3>
+            <p class="escolha__versoes">2 motores de 250 a 300 hp</p>
+            <p class="escolha__desc">Lancha de 12,10 m com proa aberta (bowrider), pensada para convivência no cockpit e na proa.</p>
+            <p class="escolha__spec">12,10 m · 3,25 m · 1+12</p>
+            <a class="botao" href="solara/solara-380-bowrider.html">Ver modelo</a>
+          </div>
+          <div class="escolha__foto"><img src="img/solara/solara-380-bowrider/hero-m.webp" alt="Solara 380 Bowrider" width="1000" height="563" loading="lazy"></div>
+        </article><article class="escolha__item" data-item>
+          <div class="escolha__texto">
+            <h3 class="escolha__nome">Solara 350</h3>
+            <p class="escolha__versoes">Targa e GT</p>
+            <p class="escolha__desc">Lancha de 10,85 m em versão Gran Targa, com a maior cabine da categoria, segundo o estaleiro: camarote de proa, sofá-cama de meia-nau e toalete fechado.</p>
+            <p class="escolha__spec">10,85 m · 3,05 m · 11+1</p>
+            <a class="botao" href="solara/solara-350.html">Ver modelo</a>
+          </div>
+          <div class="escolha__foto"><img src="img/solara/solara-350/hero-m.webp" alt="Solara 350 Targa e GT" width="1000" height="563" loading="lazy"></div>
+        </article><article class="escolha__item" data-item>
+          <div class="escolha__texto">
+            <h3 class="escolha__nome">Solara 235</h3>
+            <p class="escolha__versoes">Open e GT</p>
+            <p class="escolha__desc">Lancha de 7,35 m, rebocável em carreta, com motor único de 200 a 250 hp a gasolina.</p>
+            <p class="escolha__spec">7,35 m · 2,40 m · 7+1</p>
+            <a class="botao" href="solara/solara-235.html">Ver modelo</a>
+          </div>
+          <div class="escolha__foto"><img src="img/solara/solara-235/hero-m.webp" alt="Solara 235 Open e GT" width="1000" height="563" loading="lazy"></div>
+        </article><article class="escolha__item" data-item>
+          <div class="escolha__texto">
+            <h3 class="escolha__nome">Pontoon 320</h3>
+            <p class="escolha__versoes">T, T-Top e Double Deck</p>
+            <p class="escolha__desc">Pontoon de 9,39 m de comprimento e 3 m de largura, com casco trimarã e motor de popa de 150 a 300 hp, também divulgado como Pontoon 300.</p>
+            <p class="escolha__spec">9,39 m · 3,0 m · 280 L</p>
+            <a class="botao" href="solara/pontoon-320.html">Ver modelo</a>
+          </div>
+          <div class="escolha__foto"><img src="img/solara/pontoon-320/hero-m.webp" alt="Pontoon 320 T, T-Top e Double Deck" width="1000" height="563" loading="lazy"></div>
+        </article><article class="escolha__item" data-item>
+          <div class="escolha__texto">
+            <h3 class="escolha__nome">Boat House</h3>
+            <p class="escolha__versoes">38 m² de área interna</p>
+            <p class="escolha__desc">Casa flutuante com 11,40 m de comprimento, 3,30 m de largura e 38 m² de área.</p>
+            <p class="escolha__spec">11,40 m</p>
+            <a class="botao" href="solara/boat-house.html">Ver modelo</a>
+          </div>
+          <div class="escolha__foto"><img src="img/solara/boat-house/hero-m.webp" alt="Boat House" width="1000" height="563" loading="lazy"></div>
+        </article><div class="escolha__seletor"><p>Escolha um modelo</p><div class="escolha__linha"><button class="escolha__ponto" type="button" data-escolher aria-label="Solara 500" title="Solara 500" aria-pressed="true"></button><button class="escolha__ponto" type="button" data-escolher aria-label="Solara 455 Bowrider" title="Solara 455 Bowrider" aria-pressed="false"></button><button class="escolha__ponto" type="button" data-escolher aria-label="Solara 410" title="Solara 410" aria-pressed="false"></button><button class="escolha__ponto" type="button" data-escolher aria-label="Solara 380" title="Solara 380" aria-pressed="false"></button><button class="escolha__ponto" type="button" data-escolher aria-label="Solara 380 Bowrider" title="Solara 380 Bowrider" aria-pressed="false"></button><button class="escolha__ponto" type="button" data-escolher aria-label="Solara 350" title="Solara 350" aria-pressed="false"></button><button class="escolha__ponto" type="button" data-escolher aria-label="Solara 235" title="Solara 235" aria-pressed="false"></button><button class="escolha__ponto" type="button" data-escolher aria-label="Pontoon 320" title="Pontoon 320" aria-pressed="false"></button><button class="escolha__ponto" type="button" data-escolher aria-label="Boat House" title="Boat House" aria-pressed="false"></button></div></div></div>
+      <div class="escolha__painel" id="painel-mercury" role="tabpanel" aria-labelledby="aba-mercury"><article class="escolha__item ativo" data-item>
+          <div class="escolha__texto">
+            <h3 class="escolha__nome">Verado</h3>
+            <p class="escolha__versoes">250 a 600 hp</p>
+            <p class="escolha__desc">A linha mais refinada da Mercury, com motores de popa V8, V10 e V12.</p>
+            <p class="escolha__spec">3 modelos no catálogo</p>
+            <a class="botao" href="mercury.html#linha-verado">Ver a linha</a>
+          </div>
+          <div class="escolha__foto escolha__foto--motor"><img src="img/motores/verado-600hp.webp" alt="Motor Mercury Verado 600hp" loading="lazy"></div>
+        </article><article class="escolha__item" data-item>
+          <div class="escolha__texto">
+            <h3 class="escolha__nome">Pro XS</h3>
+            <p class="escolha__versoes">115 a 300 hp</p>
+            <p class="escolha__desc">Motores de popa de alto desempenho, de 4 cilindros, V6 e V8.</p>
+            <p class="escolha__spec">2 modelos no catálogo</p>
+            <a class="botao" href="mercury.html#linha-pro-xs">Ver a linha</a>
+          </div>
+          <div class="escolha__foto escolha__foto--motor"><img src="img/motores/proxs-175-300hp.webp" alt="Motor Mercury Pro XS 175-300hp" loading="lazy"></div>
+        </article><article class="escolha__item" data-item>
+          <div class="escolha__texto">
+            <h3 class="escolha__nome">FourStroke</h3>
+            <p class="escolha__versoes">2,5 a 300 hp</p>
+            <p class="escolha__desc">Dos portáteis aos V8, com versões a jato e o ProKicker para pesca de corrico.</p>
+            <p class="escolha__spec">9 modelos no catálogo</p>
+            <a class="botao" href="mercury.html#linha-fourstroke">Ver a linha</a>
+          </div>
+          <div class="escolha__foto escolha__foto--motor"><img src="img/motores/fourstroke-75-150hp.webp" alt="Motor Mercury FourStroke 75-150hp" loading="lazy"></div>
+        </article><article class="escolha__item" data-item>
+          <div class="escolha__texto">
+            <h3 class="escolha__nome">SeaPro</h3>
+            <p class="escolha__versoes">15 a 500 hp</p>
+            <p class="escolha__desc">Linha comercial da Mercury, feita para uso intenso em embarcações de trabalho.</p>
+            <p class="escolha__spec">5 modelos no catálogo</p>
+            <a class="botao" href="mercury.html#linha-seapro">Ver a linha</a>
+          </div>
+          <div class="escolha__foto escolha__foto--motor"><img src="img/motores/seapro-200-350hp.webp" alt="Motor Mercury SeaPro 200-350hp" loading="lazy"></div>
+        </article><article class="escolha__item" data-item>
+          <div class="escolha__texto">
+            <h3 class="escolha__nome">MerCruiser</h3>
+            <p class="escolha__versoes">200 a 430 hp</p>
+            <p class="escolha__desc">Motores de centro-rabeta a gasolina, V6 e V8, projetados para uso náutico.</p>
+            <p class="escolha__spec">3 modelos no catálogo</p>
+            <a class="botao" href="mercury.html#linha-mercruiser">Ver a linha</a>
+          </div>
+          <div class="escolha__foto escolha__foto--motor"><img src="img/motores/mercruiser-6-2l.webp" alt="Motor Mercury MerCruiser 6.2L" loading="lazy"></div>
+        </article><article class="escolha__item" data-item>
+          <div class="escolha__texto">
+            <h3 class="escolha__nome">Diesel</h3>
+            <p class="escolha__versoes">115 a 550 hp</p>
+            <p class="escolha__desc">Motores diesel de centro-rabeta, de 2,0 a 6,7 litros.</p>
+            <p class="escolha__spec">4 modelos no catálogo</p>
+            <a class="botao" href="mercury.html#linha-diesel">Ver a linha</a>
+          </div>
+          <div class="escolha__foto escolha__foto--motor"><img src="img/motores/diesel-3-0l.webp" alt="Motor Mercury Mercury Diesel 3.0L" loading="lazy"></div>
+        </article><article class="escolha__item" data-item>
+          <div class="escolha__texto">
+            <h3 class="escolha__nome">Avator</h3>
+            <p class="escolha__versoes">750 W a 11 kW</p>
+            <p class="escolha__desc">Motores de popa elétricos, do portátil 7.5e ao 110e.</p>
+            <p class="escolha__spec">3 modelos no catálogo</p>
+            <a class="botao" href="mercury.html#linha-avator">Ver a linha</a>
+          </div>
+          <div class="escolha__foto escolha__foto--motor"><img src="img/motores/avator-75e-110e.webp" alt="Motor Mercury Avator 75e-110e" loading="lazy"></div>
+        </article><div class="escolha__seletor"><p>Escolha um modelo</p><div class="escolha__linha"><button class="escolha__ponto" type="button" data-escolher aria-label="Verado" title="Verado" aria-pressed="true"></button><button class="escolha__ponto" type="button" data-escolher aria-label="Pro XS" title="Pro XS" aria-pressed="false"></button><button class="escolha__ponto" type="button" data-escolher aria-label="FourStroke" title="FourStroke" aria-pressed="false"></button><button class="escolha__ponto" type="button" data-escolher aria-label="SeaPro" title="SeaPro" aria-pressed="false"></button><button class="escolha__ponto" type="button" data-escolher aria-label="MerCruiser" title="MerCruiser" aria-pressed="false"></button><button class="escolha__ponto" type="button" data-escolher aria-label="Diesel" title="Diesel" aria-pressed="false"></button><button class="escolha__ponto" type="button" data-escolher aria-label="Avator" title="Avator" aria-pressed="false"></button></div></div></div>
+    </div>
+  </section>
+
+  <section class="secao secao--branco bloco bloco--inverso" aria-labelledby="titulo-mercury">
+    <div class="miolo bloco__in">
+      <div class="bloco__foto revela"><img src="img/hero/mercury-m.webp" alt="Lancha Solara 350 com dois motores de popa Mercury" width="1000" height="563" loading="lazy"></div>
+      <div class="bloco__texto"><p class="sobretitulo revela">Revendedor autorizado Mercury</p><h2 id="titulo-mercury" class="revela">Motores de 2,5 a 600 hp</h2><div class="texto revela"><p>Motores de popa, centro-rabeta, diesel e elétricos, do FourStroke portátil ao Verado V12. Venda, instalação e assistência técnica na loja.</p></div><div class="acoes revela"><a class="botao" href="mercury.html">Ver os 37 motores</a></div></div>
+    </div>
+  </section><section class="secao secao--preto bloco" aria-labelledby="titulo-500">
+    <div class="miolo bloco__in">
+      <div class="bloco__foto revela"><img src="img/solara/solara-500/intro.webp" alt="Lancha Solara 500" width="1400" height="788" loading="lazy"></div>
+      <div class="bloco__texto"><p class="sobretitulo revela">O maior da linha</p><h2 id="titulo-500" class="revela">Solara 500</h2><div class="texto revela"><p>Lancha de 15,10 m, a maior da linha, nas versões Hardtop, Flybridge e Skydeck. O Skydeck tem aberturas laterais na praça de popa, que ampliam a área útil. Tem três camarotes, ou dois camarotes e sala, dois toaletes com box e dois motores Volvo Penta D6 diesel com centro-rabeta.</p></div><div class="acoes revela"><a class="botao" href="solara/solara-500.html">Conheça o modelo</a></div></div>
+    </div>
+  </section><section class="secao secao--branco bloco bloco--inverso" aria-labelledby="titulo-bh">
+    <div class="miolo bloco__in">
+      <div class="bloco__foto revela"><img src="img/solara/boat-house/intro.webp" alt="Boat House da Solara" width="1400" height="788" loading="lazy"></div>
+      <div class="bloco__texto"><p class="sobretitulo revela">Solara Boat House</p><h2 id="titulo-bh" class="revela">Uma casa sobre a água</h2><div class="texto revela"><p>Casa flutuante com 11,40 m de comprimento, 3,30 m de largura e 38 m² de área. Inclui cozinha equipada, banheiro, quarto com cama, sofá e deck externo, com automação de iluminação e cortinas, ar-condicionado inverter e roteador 4G.</p></div><div class="acoes revela"><a class="botao" href="solara/boat-house.html">Conheça o Boat House</a></div></div>
+    </div>
+  </section>
+  <section class="secao secao--preto porque" id="sobre" aria-labelledby="titulo-sobre">
+    <div class="miolo bloco__in">
+      <div class="bloco__texto">
+        <p class="sobretitulo revela">Por que a Nautica Motors</p><h2 id="titulo-sobre" class="revela">Lanchas, motores e oficina no mesmo endereço</h2><div class="texto revela"><p>A Nautica Motors é revendedora autorizada Mercury e Solara Yachts em Belém. Vendemos lanchas, motores e peças, e a oficina própria cuida da revisão, da troca de motor e da restauração da sua embarcação.</p><p>Atendemos clientes particulares, empresas de transporte e órgãos públicos.</p></div><div class="acoes revela"><a class="botao" href="#contato">Fale com a gente</a></div>
+      </div>
+      <div class="porque__x revela" role="list">
+        <svg class="porque__linhas" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0L100 100M100 0L0 100"/></svg>
+        <div class="porque__item porque__item--topo" role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2"/><path d="M12 2v7.5M12 14.5V22M2 12h7.5M14.5 12H22M4.9 4.9l5.3 5.3M13.8 13.8l5.3 5.3M4.9 19.1l5.3-5.3M13.8 10.2l5.3-5.3"/></svg><span>Revendedor autorizado Solara</span></div>
+        <div class="porque__item porque__item--esq" role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="2"/><path d="M12 10C11 6.5 11.4 3.4 13.4 2c1.6 2.2.9 5.6-1.4 8z"/><path d="M12 10C11 6.5 11.4 3.4 13.4 2c1.6 2.2.9 5.6-1.4 8z" transform="rotate(120 12 12)"/><path d="M12 10C11 6.5 11.4 3.4 13.4 2c1.6 2.2.9 5.6-1.4 8z" transform="rotate(240 12 12)"/></svg><span>Revendedor autorizado Mercury</span></div>
+        <div class="porque__item porque__item--dir" role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></svg><span>Oficina própria e peças</span></div>
+        <div class="porque__item porque__item--base" role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Loja em Belém (PA)</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="secao secao--branco bloco bloco--inverso" id="oficina" aria-labelledby="titulo-oficina">
+    <div class="miolo bloco__in">
+      <div class="bloco__foto revela"><div class="painel-motor"><img src="img/motores/mercruiser-6-2l.webp" alt="Motor Mercury MerCruiser 6.2L" loading="lazy"></div></div>
+      <div class="bloco__texto"><p class="sobretitulo revela">Assistência técnica</p><h2 id="titulo-oficina" class="revela">Oficina e peças</h2><div class="texto revela"><p>Manutenção de motores de popa e centro-rabeta, com motores e peças originais Mercury. Atendemos embarcações particulares, empresas de transporte e órgãos públicos.</p></div><ul class="servicos revela"><li><strong>Revisão e manutenção</strong><span>Revisões periódicas, diagnóstico e reparos.</span></li><li><strong>Troca de motor</strong><span>Substituição e instalação de motores Mercury.</span></li><li><strong>Restauração</strong><span>Recuperação de motores e embarcações.</span></li><li><strong>Peças e acessórios</strong><span>Peças de reposição e acessórios náuticos.</span></li></ul><div class="acoes revela"><a class="botao" href="https://wa.me/559132243322?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Nautica%20Motors%20e%20gostaria%20de%20agendar%20uma%20revis%C3%A3o." target="_blank" rel="noopener">Agendar revisão</a></div></div>
+    </div>
+  </section>
+  <section class="secao secao--preto videos" aria-labelledby="titulo-videos">
+    <div class="miolo">
+      <div class="videos__cab">
+        <div><p class="sobretitulo revela">Na água</p><h2 id="titulo-videos" class="revela">Vídeos das lanchas Solara</h2></div>
+        <a class="botao revela" href="https://www.instagram.com/nauticamotors" target="_blank" rel="noopener">Siga no Instagram</a>
+      </div>
+      <div class="videos__grade"><article class="vcard revela" style="--atraso:0ms">
+          <button class="vcard__capa" type="button" data-video="cCGlb2HfASg" aria-label="Assistir ao vídeo: Solara 500, Teste Solara 500 Fly · Revista Náutica">
+            <img src="img/solara/solara-500/hero-m.webp" alt="" width="1000" height="563" loading="lazy"><span class="vcard__play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span>
+          </button>
+          <p class="vcard__rotulo">Solara 500</p>
+          <h3 class="vcard__titulo">Teste Solara 500 Fly</h3>
+          <p class="vcard__fonte">Revista Náutica · <a href="solara/solara-500.html">Ver o modelo</a></p>
+        </article><article class="vcard revela" style="--atraso:80ms">
+          <button class="vcard__capa" type="button" data-video="UK0SuPVG8Sg" aria-label="Assistir ao vídeo: Solara 410, Rio Boat Show 2023 · Canal Náutico">
+            <img src="img/solara/solara-410/hero-m.webp" alt="" width="1000" height="563" loading="lazy"><span class="vcard__play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span>
+          </button>
+          <p class="vcard__rotulo">Solara 410</p>
+          <h3 class="vcard__titulo">Rio Boat Show 2023</h3>
+          <p class="vcard__fonte">Canal Náutico · <a href="solara/solara-410.html">Ver o modelo</a></p>
+        </article><article class="vcard revela" style="--atraso:160ms">
+          <button class="vcard__capa" type="button" data-video="CLWIDFNtTss" aria-label="Assistir ao vídeo: Solara 380 Bowrider, Check-up completo · Canal Náutico">
+            <img src="img/solara/solara-380-bowrider/hero-m.webp" alt="" width="1000" height="563" loading="lazy"><span class="vcard__play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span>
+          </button>
+          <p class="vcard__rotulo">Solara 380 Bowrider</p>
+          <h3 class="vcard__titulo">Check-up completo</h3>
+          <p class="vcard__fonte">Canal Náutico · <a href="solara/solara-380-bowrider.html">Ver o modelo</a></p>
+        </article></div>
+    </div>
+  </section>
+  <section class="secao secao--branco bloco bloco--inverso" aria-labelledby="titulo-frota">
+    <div class="miolo bloco__in">
+      <div class="bloco__foto revela"><div class="painel-motor"><img src="img/motores/seapro-200-350hp.webp" alt="Motor Mercury SeaPro 200-350hp" loading="lazy"></div></div>
+      <div class="bloco__texto"><p class="sobretitulo revela">Órgãos públicos e empresas</p><h2 id="titulo-frota" class="revela">Embarcações e motores para frota</h2><div class="texto revela"><p>Fornecemos lanchas para polícia, bombeiros e outros órgãos públicos, e atendemos empresas de transporte com motores Mercury, incluindo a linha comercial SeaPro, feita para uso intenso.</p><p>A oficina cuida da manutenção da frota com peças originais.</p></div><div class="acoes revela"><a class="botao" href="https://wa.me/559132243322?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Nautica%20Motors%20e%20gostaria%20de%20falar%20sobre%20embarca%C3%A7%C3%B5es%20e%20motores%20para%20frota." target="_blank" rel="noopener">Falar com vendas</a></div></div>
+    </div>
+  </section>
+  <section class="faixa-redes" aria-labelledby="titulo-redes">
     <picture>
-      <source media="(max-width: 700px)" srcset="img/hero-lanchas-1200.webp">
-      <img class="hero__bg" src="img/hero-lanchas.webp" alt="" width="2400" height="1350" fetchpriority="high">
+      <source media="(max-width: 700px)" srcset="img/hero/redes-m.webp">
+      <img src="img/hero/redes.webp" alt="" width="1920" height="1080" loading="lazy">
     </picture>
-    <div class="hero__veu"></div>
-    <div class="hero__in">
-      <h1 id="titulo-home">Nautica Motors</h1>
-      <p class="hero__sub">Revendedor autorizado Mercury e Solara em Belém. Lanchas, motores, oficina e peças.</p>
-    </div>
-  </section>
-
-  <section class="secao" id="motores" aria-labelledby="titulo-motores">
-    <div class="miolo">
-      <div class="secao__topo">
-        <h2 id="titulo-motores" class="revela">Motores Mercury</h2>
-        <p class="revela" style="--atraso:80ms">Motores de popa, centro-rabeta, diesel e elétricos, de 2,5 a 600hp. Venda, instalação e assistência na loja.</p>
+    <div class="miolo faixa-redes__in">
+      <div class="faixa-redes__texto revela">
+        <p class="sobretitulo">Siga nas redes</p>
+        <h2 id="titulo-redes"><a href="https://www.instagram.com/nauticamotors" target="_blank" rel="noopener">@nauticamotors</a></h2>
+        <div class="redes">
+        <a href="https://www.instagram.com/nauticamotors" target="_blank" rel="noopener" aria-label="Instagram da Nautica Motors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor"/></svg></a>
+        <a href="https://www.facebook.com/nauticamotors" target="_blank" rel="noopener" aria-label="Facebook da Nautica Motors"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.6 21v-7.6h2.6l.4-3h-3V8.5c0-.9.3-1.5 1.6-1.5h1.6V4.3c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H8v3h2.6V21h3z"/></svg></a>
       </div>
-      <div class="carrossel" data-carrossel>
-        <div class="carrossel__trilho" tabindex="0" aria-label="Motores Mercury em destaque">
-        <a class="peca revela" href="motores/verado-600hp.html"><span class="peca__foto"><img src="img/motores/verado-600hp.webp" alt="Motor Mercury Verado 600hp" loading="lazy"></span><span class="peca__nome">Verado 600hp<small>600hp</small></span></a>
-        <a class="peca revela" href="motores/verado-350-425hp.html" style="--atraso:70ms"><span class="peca__foto"><img src="img/motores/verado-350-425hp.webp" alt="Motor Mercury Verado 350-425hp" loading="lazy"></span><span class="peca__nome">Verado 350-425hp<small>350-425hp</small></span></a>
-        <a class="peca revela" href="motores/proxs-175-300hp.html" style="--atraso:140ms"><span class="peca__foto"><img src="img/motores/proxs-175-300hp.webp" alt="Motor Mercury Pro XS 175-300hp" loading="lazy"></span><span class="peca__nome">Pro XS 175-300hp<small>175-300hp</small></span></a>
-        <a class="peca revela" href="motores/seapro-200-350hp.html" style="--atraso:210ms"><span class="peca__foto"><img src="img/motores/seapro-200-350hp.webp" alt="Motor Mercury SeaPro 200-350hp" loading="lazy"></span><span class="peca__nome">SeaPro 200-350hp<small>200-350hp</small></span></a>
-        <a class="peca revela" href="motores/fourstroke-75-150hp.html"><span class="peca__foto"><img src="img/motores/fourstroke-75-150hp.webp" alt="Motor Mercury FourStroke 75-150hp" loading="lazy"></span><span class="peca__nome">FourStroke 75-150hp<small>75-150hp</small></span></a>
-        <a class="peca revela" href="motores/fourstroke-jet-40hp.html" style="--atraso:70ms"><span class="peca__foto"><img src="img/motores/fourstroke-jet-40hp.webp" alt="Motor Mercury FourStroke Jet 40hp" loading="lazy"></span><span class="peca__nome">FourStroke Jet 40hp<small>40hp</small></span></a>
-        <a class="peca revela" href="motores/mercruiser-6-2l.html" style="--atraso:140ms"><span class="peca__foto"><img src="img/motores/mercruiser-6-2l.webp" alt="Motor Mercury MerCruiser 6.2L" loading="lazy"></span><span class="peca__nome">MerCruiser 6.2L<small>300-350hp</small></span></a>
-        <a class="peca revela" href="motores/diesel-3-0l.html" style="--atraso:210ms"><span class="peca__foto"><img src="img/motores/diesel-3-0l.webp" alt="Motor Mercury Mercury Diesel 3.0L" loading="lazy"></span><span class="peca__nome">Mercury Diesel 3.0L<small>150-270hp</small></span></a>
-        <a class="peca revela" href="motores/avator-75e-110e.html"><span class="peca__foto"><img src="img/motores/avator-75e-110e.webp" alt="Motor Mercury Avator 75e-110e" loading="lazy"></span><span class="peca__nome">Avator 75e-110e<small>7,5 kW e 11 kW</small></span></a>
-        </div>
-        <div class="secao__rodape">
-          <a class="botao" href="mercury.html">Ver os 37 motores</a>
-          <div class="setas"><button class="seta" type="button" data-ant aria-label="Motores anteriores"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button><button class="seta" type="button" data-prox aria-label="Próximas motores"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button></div>
-        </div>
       </div>
     </div>
   </section>
-
-  <section class="secao secao--alt" id="lanchas" aria-labelledby="titulo-lanchas">
-    <div class="miolo">
-      <div class="secao__topo">
-        <h2 id="titulo-lanchas" class="revela">Lanchas Solara</h2>
-        <p class="revela" style="--atraso:80ms">Lanchas, pontoons e Boat House da Solara Yachts, estaleiro brasileiro. A Nautica Motors é revendedora autorizada e trabalha com toda a linha nova.</p>
-      </div>
-      <div class="carrossel" data-carrossel>
-        <div class="carrossel__trilho" tabindex="0" aria-label="Modelos Solara">
-        <a class="barco revela" href="solara/solara-235.html"><span class="barco__foto"><img src="img/solara/solara-235/capa.webp" alt="Solara 235 Open e GT" width="900" height="600" loading="lazy"></span><span class="barco__nome">Solara 235 Open e GT<small>7,35 m · 1 motor de 200 a 250 hp</small></span></a>
-        <a class="barco revela" href="solara/solara-350.html" style="--atraso:70ms"><span class="barco__foto"><img src="img/solara/solara-350/capa.webp" alt="Solara 350 Targa e GT" width="900" height="600" loading="lazy"></span><span class="barco__nome">Solara 350 Targa e GT<small>10,85 m · 1 motor de 350 a 450 hp ou 2 de 200 a 250 hp</small></span></a>
-        <a class="barco revela" href="solara/solara-380-bowrider.html" style="--atraso:140ms"><span class="barco__foto"><img src="img/solara/solara-380-bowrider/capa.webp" alt="Solara 380 Bowrider" width="900" height="600" loading="lazy"></span><span class="barco__nome">Solara 380 Bowrider<small>12,10 m · 2 motores de 250 a 300 hp</small></span></a>
-        <a class="barco revela" href="solara/solara-380.html" style="--atraso:210ms"><span class="barco__foto"><img src="img/solara/solara-380/capa.webp" alt="Solara 380 HT e GT" width="900" height="600" loading="lazy"></span><span class="barco__nome">Solara 380 HT e GT<small>12,10 m · 2 motores de 250 a 300 hp</small></span></a>
-        <a class="barco revela" href="solara/solara-410.html"><span class="barco__foto"><img src="img/solara/solara-410/capa.webp" alt="Solara 410 HT e Fly" width="900" height="600" loading="lazy"></span><span class="barco__nome">Solara 410 HT e Fly<small>12,50 m · 2 motores de 300 a 350 hp</small></span></a>
-        <a class="barco revela" href="solara/solara-455-bowrider.html" style="--atraso:70ms"><span class="barco__foto"><img src="img/solara/solara-455-bowrider/capa.webp" alt="Solara 455 Bowrider" width="900" height="600" loading="lazy"></span><span class="barco__nome">Solara 455 Bowrider<small>14,00 m · 2 motores a gasolina ou diesel</small></span></a>
-        <a class="barco revela" href="solara/solara-500.html" style="--atraso:140ms"><span class="barco__foto"><img src="img/solara/solara-500/capa.webp" alt="Solara 500 HT, Fly e Skydeck" width="900" height="600" loading="lazy"></span><span class="barco__nome">Solara 500 HT, Fly e Skydeck<small>15,10 m · 2 motores Volvo Penta D6</small></span></a>
-        <a class="barco revela" href="solara/pontoon-320.html" style="--atraso:210ms"><span class="barco__foto"><img src="img/solara/pontoon-320/capa.webp" alt="Pontoon 320 T, T-Top e Double Deck" width="900" height="600" loading="lazy"></span><span class="barco__nome">Pontoon 320 T, T-Top e Double Deck<small>9,39 m · motor de popa de 150 a 300 hp</small></span></a>
-        <a class="barco revela" href="solara/boat-house.html"><span class="barco__foto"><img src="img/solara/boat-house/capa.webp" alt="Boat House" width="900" height="600" loading="lazy"></span><span class="barco__nome">Boat House<small>11,40 m · 38 m² de área interna</small></span></a>
-        </div>
-        <div class="secao__rodape">
-          <a class="botao" href="solara.html">Ver os 9 modelos</a>
-          <div class="setas"><button class="seta" type="button" data-ant aria-label="Modelos anteriores"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button><button class="seta" type="button" data-prox aria-label="Próximas modelos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="secao" id="oficina" aria-labelledby="titulo-oficina">
-    <div class="miolo oficina">
-      <div class="oficina__texto">
-        <h2 id="titulo-oficina" class="revela">Oficina e peças</h2>
-        <p class="revela" style="--atraso:80ms">Manutenção de motores de popa e centro-rabeta com motores e peças originais Mercury. Atendemos embarcações particulares, empresas de transporte e órgãos públicos.</p>
-      </div>
-      <ul class="oficina__lista">
-        <li class="revela"><strong>Revisão e manutenção</strong><span>Revisões periódicas, diagnóstico e reparos.</span></li>
-        <li class="revela" style="--atraso:70ms"><strong>Troca de motor</strong><span>Substituição e instalação de motores Mercury.</span></li>
-        <li class="revela" style="--atraso:140ms"><strong>Restauração</strong><span>Recuperação de motores e embarcações.</span></li>
-        <li class="revela" style="--atraso:210ms"><strong>Peças e acessórios</strong><span>Peças de reposição e acessórios náuticos.</span></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="secao secao--contato" id="contato" aria-labelledby="titulo-contato">
-    <div class="miolo contato">
-      <div>
+  <section class="secao secao--preto contato" id="contato" aria-labelledby="titulo-contato">
+    <div class="miolo bloco__in">
+      <div class="bloco__texto">
+        <p class="sobretitulo revela">Fale com a Nautica Motors</p>
         <h2 id="titulo-contato" class="revela">Contato</h2>
         <div class="contato__bloco revela">
           <h3>Telefone e WhatsApp</h3>
           <a class="contato__fone" href="https://wa.me/559132243322?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Nautica%20Motors%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">(91) 3224-3322</a>
         </div>
-        <div class="contato__bloco revela">
-          <h3>Endereço</h3>
-          <p>Av. Conselheiro Furtado, 1841, Cremação<br>Belém, PA, CEP 66040-100</p>
-        </div>
-        <div class="contato__bloco revela">
-          <h3>Horário</h3>
-          <dl class="horario"><dt>Segunda a quinta</dt><dd>08:00 às 17:55</dd><dt>Sexta</dt><dd>08:00 às 17:00</dd><dt>Sábado</dt><dd>09:00 às 12:45</dd><dt>Domingo</dt><dd>Fechado</dd></dl>
-        </div>
-        <div class="contato__bloco revela">
-          <h3>E-mail</h3>
-          <a href="mailto:vendas@nauticamotors.com.br">vendas@nauticamotors.com.br</a>
-        </div>
-        <div class="contato__bloco revela">
-          <div class="redes">
-        <a href="https://www.instagram.com/nauticamotors" target="_blank" rel="noopener" aria-label="Instagram da Nautica Motors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+        <div class="contato__bloco revela"><h3>Endereço</h3><p>Av. Conselheiro Furtado, 1841, Cremação<br>Belém, PA, CEP 66040-100</p></div>
+        <div class="contato__bloco revela"><h3>Horário</h3><dl class="horario"><dt>Segunda a quinta</dt><dd>08:00 às 17:55</dd><dt>Sexta</dt><dd>08:00 às 17:00</dd><dt>Sábado</dt><dd>09:00 às 12:45</dd><dt>Domingo</dt><dd>Fechado</dd></dl></div>
+        <div class="contato__bloco revela"><h3>E-mail</h3><a href="mailto:vendas@nauticamotors.com.br">vendas@nauticamotors.com.br</a></div>
+        <div class="contato__bloco revela"><div class="redes">
+        <a href="https://www.instagram.com/nauticamotors" target="_blank" rel="noopener" aria-label="Instagram da Nautica Motors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor"/></svg></a>
         <a href="https://www.facebook.com/nauticamotors" target="_blank" rel="noopener" aria-label="Facebook da Nautica Motors"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.6 21v-7.6h2.6l.4-3h-3V8.5c0-.9.3-1.5 1.6-1.5h1.6V4.3c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H8v3h2.6V21h3z"/></svg></a>
+      </div></div>
       </div>
-        </div>
-      </div>
-      <div class="contato__mapa revela" style="--atraso:120ms">
+      <div class="contato__mapa revela">
         <iframe title="Mapa: Nautica Motors, Av. Conselheiro Furtado, 1841, Cremação" src="https://maps.google.com/maps?q=Av.%20Conselheiro%20Furtado%2C%201841%2C%20Crema%C3%A7%C3%A3o%2C%20Bel%C3%A9m%2C%20PA%2C%20CEP%2066040-100&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
@@ -153,15 +381,25 @@
 </main>
 <footer class="rodape">
   <div class="miolo">
-    <div class="rodape__in">
+    <div class="rodape__topo">
       <a class="rodape__marca" href="index.html"><img src="img/logo-nautica-completa.png" alt="Nautica Motors" width="560" height="381" loading="lazy"></a>
-      <p class="rodape__texto">Revendedor autorizado Mercury e Solara.<br>Av. Conselheiro Furtado, 1841, Cremação, Belém, PA, CEP 66040-100.<br>(91) 3224-3322 · vendas@nauticamotors.com.br</p>
-      <div class="redes">
-        <a href="https://www.instagram.com/nauticamotors" target="_blank" rel="noopener" aria-label="Instagram da Nautica Motors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"/></svg></a>
-        <a href="https://www.facebook.com/nauticamotors" target="_blank" rel="noopener" aria-label="Facebook da Nautica Motors"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.6 21v-7.6h2.6l.4-3h-3V8.5c0-.9.3-1.5 1.6-1.5h1.6V4.3c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H8v3h2.6V21h3z"/></svg></a>
-      </div>
+      <nav class="rodape__links" aria-label="Rodapé">
+        <a href="solara.html">Lanchas Solara</a>
+        <a href="mercury.html">Motores Mercury</a>
+        <a href="index.html#oficina">Oficina</a>
+        <a href="index.html#sobre">Sobre</a>
+        <a href="index.html#contato">Contato</a>
+        <a href="https://wa.me/559132243322?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Nautica%20Motors%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.instagram.com/nauticamotors" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/nauticamotors" target="_blank" rel="noopener">Facebook</a>
+      </nav>
+      <div class="rodape__parceiros"><p>Revendedor autorizado</p><div><img src="img/marcas/mercury.png" alt="Mercury Marine" width="520" height="81" loading="lazy"><img src="img/marcas/solara.png" alt="Solara Yachts" width="446" height="73" loading="lazy"></div></div>
     </div>
-    <p class="rodape__nota">© <span data-ano>2026</span> Nautica Motors. Fotos e especificações dos motores: Mercury Marine. Fotos e especificações das lanchas: Solara Yachts.</p>
+    <div class="rodape__base">
+      <a class="rodape__tag" href="https://www.instagram.com/nauticamotors" target="_blank" rel="noopener">@nauticamotors</a>
+      <p>© <span data-ano>2026</span> Nautica Motors · Belém (PA)</p>
+      <p>Fotos: Solara Yachts e Mercury Marine</p>
+    </div>
   </div>
 </footer>
 <script src="js/site.js" defer></script>
