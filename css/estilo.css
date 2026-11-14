@@ -393,6 +393,9 @@ html:not(.js) .hero__slide:first-of-type { display: block; opacity: 1; }
 }
 .vcard__titulo { margin-top: 6px; font-size: 24px; line-height: 1.15; }
 .vcard__fonte { margin-top: 8px; font-size: 14px; line-height: 1.6; color: var(--texto-suave-escuro); }
+.secao--branco .videos__cab { border-bottom-color: var(--linha-clara); }
+.secao--branco .vcard__rotulo { color: var(--azul-texto); }
+.secao--branco .vcard__fonte { color: var(--texto-suave); }
 
 /* ---------- Faixa das redes ---------- */
 .faixa-redes { position: relative; min-height: clamp(380px, 38vw, 540px); display: flex; align-items: center; overflow: hidden; }
