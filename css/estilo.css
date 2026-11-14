@@ -333,7 +333,8 @@ html:not(.js) .hero__slide:first-of-type { display: block; opacity: 1; }
 /* Bloco com a foto ocupando a metade da tela, de ponta a ponta (seção de frota) */
 .bloco--sangria { position: relative; overflow: hidden; padding-block: clamp(64px, 7vw, 104px); }
 .bloco--sangria .bloco__in { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); min-height: clamp(420px, 38vw, 560px); }
-.bloco--sangria .bloco__foto { position: absolute; top: 0; right: 0; bottom: 0; width: 50%; }
+.bloco--sangria h2 { font-size: clamp(30px, 3.2vw, 44px); }
+.bloco--sangria .bloco__foto { position: absolute; top: clamp(40px, 5vw, 96px); right: clamp(12px, 1.6vw, 32px); bottom: clamp(40px, 4vw, 72px); width: calc(50% - clamp(12px, 1.6vw, 32px)); }
 .bloco--sangria .bloco__foto > img { width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover; object-position: 44% 55%; }
 .bloco__foto iframe { display: block; width: 100%; aspect-ratio: 16 / 10; border: 0; background: #000; }
 
