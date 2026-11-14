@@ -332,20 +332,12 @@ html:not(.js) .hero__slide:first-of-type { display: block; opacity: 1; }
 .painel-motor img { position: absolute; inset: 10% 15%; width: 70%; height: 80%; object-fit: contain; }
 .bloco__foto iframe { display: block; width: 100%; aspect-ratio: 16 / 10; border: 0; background: #000; }
 
-/* Por que a Nautica Motors: os quatro motivos nos pontos de uma rosa dos ventos */
-.porque__x { position: relative; width: min(100%, 480px); aspect-ratio: 1; margin-inline: auto; }
-.porque__rosa { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
-.porque__rosa * { vector-effect: non-scaling-stroke; }
-.porque__anel { fill: none; stroke: var(--azul); stroke-width: 1.2; }
-.porque__anel--fino { stroke: rgba(255, 255, 255, .22); stroke-width: 1; stroke-dasharray: 2 4; }
-.porque__marcas { stroke: var(--azul); stroke-width: 1.2; stroke-linecap: round; }
-.porque__estrela { fill: none; stroke: rgba(255, 255, 255, .85); stroke-width: 1.2; stroke-linejoin: round; }
-.porque__norte { fill: var(--azul); }
-.porque__centro { fill: var(--branco); }
-.js .porque__x.visivel .porque__estrela { animation: gira 1.6s var(--ease) both; transform-origin: 50px 50px; }
-@keyframes gira { from { transform: rotate(-90deg); opacity: 0; } to { transform: none; opacity: 1; } }
+/* Por que a Nautica Motors: os quatro motivos em volta de um X */
+.porque__x { position: relative; width: min(100%, 440px); aspect-ratio: 1; margin-inline: auto; }
+.porque__linhas { position: absolute; inset: 9%; width: 82%; height: 82%; overflow: visible; }
+.porque__linhas path { stroke: var(--azul); stroke-width: 1; vector-effect: non-scaling-stroke; opacity: .7; fill: none; }
 .porque__item {
-  position: absolute; width: 30%;
+  position: absolute; width: 38%;
   display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center;
 }
 .porque__item svg { width: 52px; height: 52px; stroke-width: 1.3; }
@@ -700,7 +692,6 @@ html:not(.js) .hero__slide:first-of-type { display: block; opacity: 1; }
   .motor-card__nome { font-size: 17px; padding: 12px 12px 2px; }
   .motor-card__sub { padding: 0 12px 14px; font-size: 13px; }
   .servicos, .lista--2 { grid-template-columns: minmax(0, 1fr); }
-  .porque__rosa { transform: scale(.72); }
   .porque__item { gap: 8px; }
   .porque__item svg { width: 36px; height: 36px; }
   .porque__item span { font-size: 12px; }
