@@ -111,38 +111,6 @@
     tocar();
   }
 
-  // Seletor de modelos: abas Solara e Mercury, pontos escolhem o modelo.
-  document.querySelectorAll("[data-escolha]").forEach(function (sec) {
-    var abas = Array.prototype.slice.call(sec.querySelectorAll("[role=tab]"));
-    function abrirAba(aba) {
-      abas.forEach(function (b) {
-        var on = b === aba;
-        b.setAttribute("aria-selected", on ? "true" : "false");
-        b.tabIndex = on ? 0 : -1;
-        document.getElementById(b.getAttribute("aria-controls")).classList.toggle("ativo", on);
-      });
-    }
-    abas.forEach(function (aba, i) {
-      aba.addEventListener("click", function () { abrirAba(aba); });
-      aba.addEventListener("keydown", function (ev) {
-        if (ev.key !== "ArrowRight" && ev.key !== "ArrowLeft") return;
-        var outra = abas[(i + (ev.key === "ArrowRight" ? 1 : -1) + abas.length) % abas.length];
-        abrirAba(outra);
-        outra.focus();
-      });
-    });
-    sec.querySelectorAll(".escolha__painel").forEach(function (painel) {
-      var itens = painel.querySelectorAll("[data-item]");
-      var pts = painel.querySelectorAll("[data-escolher]");
-      pts.forEach(function (pt, i) {
-        pt.addEventListener("click", function () {
-          itens.forEach(function (it, k) { it.classList.toggle("ativo", k === i); });
-          pts.forEach(function (q, k) { q.setAttribute("aria-pressed", k === i ? "true" : "false"); });
-        });
-      });
-    });
-  });
-
   // Entrada das seções: título, texto e imagem em sequência.
   var alvos = document.querySelectorAll(".revela");
   if (temIO) {
