@@ -1,0 +1,7 @@
+# Força HTTPS em todo o site.
+# A Locaweb usa um proxy (nginx) na frente do Apache, por isso checamos
+# o X-Forwarded-Proto além do %{HTTPS}, para não gerar loop de redirecionamento.
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
